@@ -18,8 +18,9 @@ public class App {
                 .scale(1)
                 .maxScreenCols(cols)
                 .maxScreenRows(rows)
-                .fps(60)
-                .simulation(new GameOfLife(rows, cols))
+                .fps(200)
+//                .simulation(new GameOfLife(rows, cols))
+                .simulation(new LangtonsAnt(rows, cols))
                 .build();
 
         window.add(appPanel);
